@@ -1,0 +1,35 @@
+// https://secretmessage-16452-default-rtdb.firebaseio.com/
+
+
+//   data() {
+//     return {
+//       pvtData: "",
+//       secret: "123#$%",
+//       encData: "",
+//     };
+//   },
+//   methods: {
+//     encryptData() {
+//       if (this.pvtData.length) {
+//         // hash the name with any algorithm
+//         const data = CryptoJS.AES.encrypt(this.pvtData, this.secret).toString();
+
+//         // store into localStorage
+//         localStorage.setItem("secretData", data);
+
+//         // display the encrypted data
+//         this.getEncryptedData();
+//       }
+//     },
+
+//     decryptData() {
+//       // get data from localStorage
+//       const secretData = localStorage.getItem("secretData");
+
+//       // decrypt the data and convert to string
+//       const decryptData = CryptoJS.AES.decrypt(
+//         secretData,
+//         this.secret
+//       ).toString(CryptoJS.enc.Utf8);
+
+//       alert("Decrypted private data: " + decryptData);
